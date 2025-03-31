@@ -7,7 +7,12 @@ public class Throw : MonoBehaviour
     public GameObject projectile, projectileSample1, projectileSample2, projectileSample3;
     public bool shoot = true;
 
-    // Update is called once per frame
+    
+    void Awake()
+    {
+        this.enabled = false; 
+    }
+
     void Update()
     {
         if (Input.GetMouseButton(0) && shoot == true)

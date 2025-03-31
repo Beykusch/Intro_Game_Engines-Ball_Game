@@ -8,6 +8,12 @@ public class MouseLook : MonoBehaviour
     private float x = 0.0f;
     private float y = 0.0f;
     bool closed = true;
+
+    private void Awake()
+    {
+        this.enabled = false;
+    }
+
     private void Start()
     {
         transform.eulerAngles = new Vector3(0, 0, 0);
